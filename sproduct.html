@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <!-- Link for Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
+
+    <!-- Link for Boxicon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Link for CSS-->
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <style>
+        .small-img-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .small-img-col {
+            flex-basis: 22%;
+            cursor: pointer;
+        }
+
+        .sproduct select {
+            display: block;
+            padding: 5px 10px;
+        }
+
+        .sproduct input {
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .sproduct input:focus {
+            outline: none;
+        }
+
+        .buy-btn {
+            background-color: coral;
+            opacity: 1;
+            transition: 0.3s all;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <img src="new_logo.png" alt="display img" height="50" width="auto">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i id="bar" class='bx bx-menu'></i></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container sproduct my-5 pt-5">
+        <div class="row mt-5">
+            <div class="col-lg-5 col-md-12 col-12">
+                <!-- Main Image-->
+                <img class="product-img img-fluid w-100 pb-3" src="https://m.media-amazon.com/images/I/61039EcU3kL._AC_SX522_.jpg" id="MainImg" alt="">
+
+                <div class="small-img-group">
+                    <!-- Small Image 1-->
+                    <div class="small-img-col">
+                        <img src="https://m.media-amazon.com/images/I/61y+BOLOJgL._AC_SX522_.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <!-- Small Image 2-->
+                    <div class="small-img-col">
+                        <img src="https://m.media-amazon.com/images/I/61-kJiZZ5jL._AC_SX522_.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <!-- Small Image 3-->
+                    <div class="small-img-col">
+                        <img src="https://m.media-amazon.com/images/I/61dhSq6ufnL._AC_SX522_.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <!-- Small Image 4-->
+                    <div class="small-img-col">
+                        <img src="https://m.media-amazon.com/images/I/61039EcU3kL._AC_SX522_.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12">
+                <h6>Home / T-Shirt</h6>
+                <h3 class="product-name py-4">Long Sleeve Cotton Shirt</h3>
+                <h2 class="product-price">$24.00</h2>
+                <select class="product-size my-3">
+                    <option>Select Size</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                    <option>Extra-Large</option>
+                </select>
+                <input class="product-quantity" type="number" value="1">
+                <button class="buy-btn" onclick="function_add_to_cart()">Add To Cart</button>
+                <h4 class="mt-5 mb-b">Product Details</h4>
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus asperiores incidunt 
+                    ducimus sit, quidem, nemo nulla rerum, beatae nobis officiis consectetur commodi esse 
+                    necessitatibus nam architecto doloremque natus accusamus enim.</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Related Products</h3>
+            <hr class="mx-auto">
+        </div>
+        <div class="row mx-auto container-fluid">
+            <!-- Featured Product 1-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/71bzG5Hdq4L._AC_SY500_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Oxfords Sneakers</h5>
+                <h4 class="p-price">$49.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 2-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/61hwd7aAmnL._AC_SY395_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Stainless Steel Chronograph Watch</h5>
+                <h4 class="p-price">$97.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 3-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/61039EcU3kL._AC_SX522_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Long Sleeve Cotton Shirt</h5>
+                <h4 class="p-price">$24.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 4-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/61tzVZpr0EL._AC_SX425_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Full Grain Leather Bagpack</h5>
+                <h4 class="p-price">$265.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="new_logo_dark.png" alt="" width="250px" height="Auto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aut itaque dolor aperiam tenetur 
+                    recusandae optio obcaecati, quae.</p>
+            </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <h5 class="pb-2">Featured</h5>
+                    <ul class="text-uppercase list-unstyled">
+                        <li> <a href="#">Clothes</a></li>
+                        <li> <a href="#">Shoes</a></li>
+                        <li> <a href="#">Watches</a></li>
+                        <li> <a href="#">Winter Wear</a></li>
+                        <li> <a href="#">Popular</a></li>
+                    </ul>
+                </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <h5 class="pb-2">Contact Us</h5>
+                    <div>
+                        <h6 class="text-uppercase">Address</h6>
+                        <p>123 random street, city, State</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">Phone</h6>
+                        <p>(123) 456 - 7890</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">Email</h6>
+                        <p>email@example.com</p>
+                    </div>
+                </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <h5 class="pb-2">Social Media</h5>
+                    <div class="row">
+                        <img class="img-fluid w-25 h-100 m-2" src="https://i.pinimg.com/736x/ca/d8/22/cad82236256b59eae76ad2d29f7131c3.jpg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="https://www.theretailatoz.com/wp-content/uploads/2017/06/mens-clothing.jpg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="https://assets.siccode.com/i-n-b/naics-code-448110-mens-clothing-stores.jpg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="https://static01.nyt.com/images/2012/09/06/nyregion/Y-MENSWEAR2/Y-MENSWEAR2-jumbo.jpg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="https://img2023.weyesimg.com/uploads/ouyeedisplays.allweyes.com/images/15324353991824.jpg?imageView2/2/w/1920/q/75" alt="">
+                    </div>
+                </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="https://thetechportal.com/wp-content/uploads/2020/04/stripe-payments-the-tech-portal-800x430.png" alt="" width="75px" height="auto">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                    <p>VATICA TECH © 2023 All Rights Reserved</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+
+     <!-- Links for Popper and JS-->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+     <script src="main.js"></script>
+
+    <script>
+        //Switching product colors
+       var MainImg = document.getElementById('MainImg');
+       var smallimg = document.getElementsByClassName('small-img');
+
+       smallimg[0].onclick = function() {
+        MainImg.src = smallimg[0].src
+       }
+       smallimg[1].onclick = function() {
+        MainImg.src = smallimg[1].src
+       }
+       smallimg[2].onclick = function() {
+        MainImg.src = smallimg[2].src
+       }
+       smallimg[3].onclick = function() {
+        MainImg.src = smallimg[3].src
+       }
+
+       
+    </script>
+
+
+</body>
+</html>

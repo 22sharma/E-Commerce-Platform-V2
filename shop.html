@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <!-- Link for Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
+
+    <!-- Link for Boxicon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Link for CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .product img {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            object-fit: cover;
+        }
+
+        #featured > div.row.mx-auto.container > nav > ul > li.page-item.active > a {
+            background-color: black;
+        }
+
+        #featured > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover>a {
+            background-color: coral;
+            color: white;
+
+        }
+
+        .pagination a {
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <img src="new_logo.png" alt="display img" height="50" width="auto">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i id="bar" class='bx bx-menu'></i></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="featured" class="my-5 py-5">
+        <div class="container mt-5 py-5">
+            <h2 class="font-weight-bold">Our Products</h2>
+            <hr>
+            <p>Check out our most popular products</p>
+        </div>
+        <div class="row mx-auto container">
+            <!-- Featured Product 1-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/71bzG5Hdq4L._AC_SY500_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Oxfords Sneakers</h5>
+                <h4 class="p-price">$49.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 2-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/71wYL047LxL._AC_SX679_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">WULFUL Vintage Leather Jacket</h5>
+                <h4 class="p-price">$97.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 3-->
+            <div onclick="window.location.href='sproduct.html';" class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/61039EcU3kL._AC_SX522_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Long Sleeve Cotton Shirt</h5>
+                <h4 class="p-price">$24.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 4-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/61tzVZpr0EL._AC_SX425_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Full Grain Leather Bagpack</h5>
+                <h4 class="p-price">$265.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 5-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/51TQ1Er+xxL._AC_UL480_FMwebp_QL65_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Flannel Cotton Shirt</h5>
+                <h4 class="p-price">$49.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 6-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/81gFj2uIYOS._AC_UL480_FMwebp_QL65_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Recluse Henley Sweater</h5>
+                <h4 class="p-price">$97.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 7-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/51rkKPruYvL._AC_UL480_FMwebp_QL65_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Wrinkle-Free Stretch Dress Shirt </h5>
+                <h4 class="p-price">$24.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 8-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/61SPc1MDACL._AC_UL480_FMwebp_QL65_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Retro Henley Shirt</h5>
+                <h4 class="p-price">$265.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 9-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/71scjcpM5hL._AC_UL480_FMwebp_QL65_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Brim Straw Fedora</h5>
+                <h4 class="p-price">$49.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 10-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/819D4PwVqNL._AC_UL480_FMwebp_QL65_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Reversible Casual Belt</h5>
+                <h4 class="p-price">$97.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 11-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/81SSNCLV-mL._AC_UL480_FMwebp_QL65_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Slim Bifold Wallet</h5>
+                <h4 class="p-price">$24.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 12-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/51jbtbZMOSL._AC_UL480_FMwebp_QL65_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">RAY-BAN Sunglasses</h5>
+                <h4 class="p-price">$265.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 13-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/71bzG5Hdq4L._AC_SY500_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Oxfords Sneakers</h5>
+                <h4 class="p-price">$49.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 14-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/61hwd7aAmnL._AC_SY395_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Stainless Steel Chronograph Watch</h5>
+                <h4 class="p-price">$97.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 15-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/61039EcU3kL._AC_SX522_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Long Sleeve Cotton Shirt</h5>
+                <h4 class="p-price">$24.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 16-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/61tzVZpr0EL._AC_SX425_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Full Grain Leather Bagpack</h5>
+                <h4 class="p-price">$265.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 17-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/71bzG5Hdq4L._AC_SY500_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Oxfords Sneakers</h5>
+                <h4 class="p-price">$49.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 18-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/61hwd7aAmnL._AC_SY395_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Stainless Steel Chronograph Watch</h5>
+                <h4 class="p-price">$97.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 19-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/61039EcU3kL._AC_SX522_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Long Sleeve Cotton Shirt</h5>
+                <h4 class="p-price">$24.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <!-- Featured Product 20-->
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="https://m.media-amazon.com/images/I/61tzVZpr0EL._AC_SX425_.jpg" alt="img">
+                <div class="star">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <h5 class="p-name">Full Grain Leather Bagpack</h5>
+                <h4 class="p-price">$265.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Pagination-->
+            <nav aria-label="...">
+                <ul class="pagination mt-5">
+                <!-- Previous disabled-->
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <!-- Current active-->
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2 <span class="sr-only"></span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="new_logo_dark.png" alt="" width="250px" height="Auto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aut itaque dolor aperiam tenetur 
+                    recusandae optio obcaecati, quae.</p>
+            </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <h5 class="pb-2">Featured</h5>
+                    <ul class="text-uppercase list-unstyled">
+                        <li> <a href="#">Clothes</a></li>
+                        <li> <a href="#">Shoes</a></li>
+                        <li> <a href="#">Watches</a></li>
+                        <li> <a href="#">Winter Wear</a></li>
+                        <li> <a href="#">Popular</a></li>
+                    </ul>
+                </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <h5 class="pb-2">Contact Us</h5>
+                    <div>
+                        <h6 class="text-uppercase">Address</h6>
+                        <p>123 random street, city, State</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">Phone</h6>
+                        <p>(123) 456 - 7890</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">Email</h6>
+                        <p>email@example.com</p>
+                    </div>
+                </div>
+                <div class="footer-one col-lg-3 col-md-6 col-12">
+                    <h5 class="pb-2">Social Media</h5>
+                    <div class="row">
+                        <img class="img-fluid w-25 h-100 m-2" src="https://i.pinimg.com/736x/ca/d8/22/cad82236256b59eae76ad2d29f7131c3.jpg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="https://www.theretailatoz.com/wp-content/uploads/2017/06/mens-clothing.jpg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="https://assets.siccode.com/i-n-b/naics-code-448110-mens-clothing-stores.jpg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="https://static01.nyt.com/images/2012/09/06/nyregion/Y-MENSWEAR2/Y-MENSWEAR2-jumbo.jpg" alt="">
+                        <img class="img-fluid w-25 h-100 m-2" src="https://img2023.weyesimg.com/uploads/ouyeedisplays.allweyes.com/images/15324353991824.jpg?imageView2/2/w/1920/q/75" alt="">
+                    </div>
+                </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="https://thetechportal.com/wp-content/uploads/2020/04/stripe-payments-the-tech-portal-800x430.png" alt="" width="75px" height="auto">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                    <p>VATICA TECH © 2023 All Rights Reserved</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Links for Popper and JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
